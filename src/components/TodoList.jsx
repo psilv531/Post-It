@@ -82,8 +82,8 @@ export function TodoList(){
             <div className="input-group mt-4 mb-4">
                 <input ref={taskRef} placeholder='Título' className="form-control me-2" type="text"></input>
                 <input ref={descRef} placeholder='Descripción' className="form-control me-2" type="text"></input>
-                <input ref={imporRef} className="form-check-input me-2" type="checkbox"></input><label>Importante</label>
-                <button onClick={agregarTarea} className="btn btn-dark me-2">AGREGAR</button>                
+                <input ref={imporRef} className="form-check-input ms-2" type="checkbox" id="miCheck"></input><label className="form-check-label ms-2" for="miCheck">Importante</label>
+                <button onClick={agregarTarea} className="btn btn-dark ms-3 block">AGREGAR</button>                
             </div>
 
             <main>
