@@ -1,0 +1,62 @@
+
+:root{
+    --colorNormal: #FFFFCC;
+    --colorImportante: #EC7063;
+    --colorBackground: #666;
+    --colorGrisOscuro: #111;    
+}
+
+body{
+    background-color: var(--colorBackground);
+}
+
+.rotate{    
+    transform:rotate(2deg);
+    -ms-transform:rotate(2deg); /* IE 9 */
+    -moz-transform:rotate(2deg); /* Firefox */
+    -webkit-transform:rotate(2deg); /* Safari and Chrome */
+    -o-transform:rotate(2deg); /* Opera */
+    box-shadow: 2px 2px 2px 1px var(--colorGrisOscuro);
+}
+
+.rotate:hover{
+    transform:rotate(2deg) scale(1.1);
+    -ms-transform:rotate(2deg) scale(1.2); /* IE 9 */
+    -moz-transform:rotate(2deg) scale(1.2); /* Firefox */
+    -webkit-transform:rotate(2deg) scale(1.2) all .5s; /* Safari and Chrome */
+    -o-transform:rotate(2deg) scale(1.2); /* Opera */
+
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;    
+}
+
+.importante{
+    background-color: var(--colorImportante);
+    }
+
+.normal{
+    background-color: var(--colorNormal);
+}
+
+.card{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-radius: 0px;
+    overflow: hidden;
+    margin: .7em 0em;
+}
+
+.texto{
+    font-family: 'Reenie Beanie', cursive;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
